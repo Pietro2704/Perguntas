@@ -38,4 +38,16 @@ function mostrarPergunta(){
     })
 }
 
+function verificarResposta(indiceEscolhido){
+    let p = perguntas[indicePerguntas]
+
+    if(indiceEscolhido === p.resposta){
+        div_feedback.innerHTML = `<div class="alert alert-success">Correto!</div>`
+    }else{
+        div_feedback.innerHTML = `<div class="alert alert-danger">Errado!</div>`
+    }
+
+    nextButton.classList.remove("d-none")
+}
+
 mostrarPergunta()
