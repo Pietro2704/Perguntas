@@ -82,6 +82,7 @@ nextButton.addEventListener("click", function addIndex() {
             alert(`Voce pontuou ${pontos} vezes. RUIM!`)
         }
         indicePerguntas = -1
+        pontos = 0
     }
 
     indicePerguntas++
